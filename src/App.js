@@ -31,13 +31,11 @@ export default function App() {
         id="App"
       >
         <Navbar />
-        <div className="w-full h-full ml-[90px] sm:ml-0 md:ml-0 lg:ml-0">
           <Profile />
           <About />
           <Experience />
           <Projects />
           <Contact />
-        </div>
         <Footer />
 
       </motion.div>
