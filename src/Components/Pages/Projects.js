@@ -21,7 +21,7 @@ export const Projects = () => {
   return (
     <section
       id="Projects"
-      className="justify-center items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-auto lg:w-full mt-12"
+      className="justify-center p-6 items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-auto lg:w-full mt-12"
     >
       <p className="text-center text-lg text-slate-700">Explore My</p>
       <h1 className="text-center text-4xl mb-12">Projects</h1>
@@ -59,7 +59,7 @@ export const Projects = () => {
                 <img
                   src={grab.img}
                   alt=""
-                  className="block w-[900px] h-auto rounded-[24px]"
+                  className="block w-[1100px] h-auto rounded-[24px]"
                 />
               </div>
 
@@ -70,6 +70,32 @@ export const Projects = () => {
           ))}
         </Swiper>
         <FaAngleRight className="w-12 h-12 text-slate-700" />
+      </div>
+      <div className="">
+        <h2 className="text-xl font-semibold text-slate-700">Key Features:</h2>
+        <ul className="gap-2 text-justify list-disc ml-8">
+          <li className="mt-2">
+            Imports a CSV file containing basic information about the particular
+            graduates.
+          </li>
+          <li className="mt-2">
+            While importing, the system creates an account for each alumnus and
+            sends a notification to every graduate in the CSV file, providing
+            them with their username and the default password.
+          </li>
+          <li className="mt-2">
+            The alumni can log in and are redirected to a password change page
+            to personalize their accounts. After that, they can update their
+            work information and employment status. Additionally, we have a
+            history page that both admins and users can view to see if the
+            alumni have updated their information multiple times.
+          </li>
+          <li className="mt-2">
+            The admin also has the capability to edit alumni information, manage
+            events, and generate reports for each batch whether the alumni is
+            employed, unemployed, or inactive user.
+          </li>
+        </ul>
       </div>
     </section>
   );

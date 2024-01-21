@@ -5,13 +5,13 @@ import "../Navbar.css";
 export const Footer = () => {
 
   return (
-    <section id="About" className="flex flex-col justify-center">
-      <dvi className="flex lg:flex-row justify-center">
-        <ul className="hidden sm:flex sm:flex-row items-center">
+    <section id="About" className="flex flex-col gap-4 justify-center">
+      <dvi className="flex flex-row justify-center">
+        <ul className="hidden sm:flex sm:flex-row sm:justify-center">
           <li className="w-full text-center text-xl">
             <Link
               to="Profile"
-              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75 lg:p-0 lg:m-0"
+              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
               offset={-100}
@@ -24,7 +24,7 @@ export const Footer = () => {
           <li className="w-full text-center text-xl">
             <Link
               to="About"
-              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75 lg:p-0 lg:m-0"
+              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
               offset={-100}
@@ -37,7 +37,7 @@ export const Footer = () => {
           <li className="w-full text-center text-xl">
             <Link
               to="Exp"
-              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75 lg:p-0 lg:m-0"
+              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
               offset={-100}
@@ -50,7 +50,7 @@ export const Footer = () => {
           <li className="w-full text-center text-xl">
             <Link
               to="Projects"
-              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75 lg:p-0 lg:m-0"
+              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
               offset={-100}
@@ -64,7 +64,7 @@ export const Footer = () => {
           <li className="w-full text-center text-xl">
             <Link
               to="Contact"
-              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75 lg:p-0 lg:m-0"
+              className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
               offset={-100}
@@ -76,8 +76,7 @@ export const Footer = () => {
         </ul>
       </dvi>
       <p className="text-center mb-14">
-        Copyright &#169; 2024 3D Villadolid. All Rights
-        Reserved.
+        Copyright &#169; 2024 3D Villadolid. All Rights Reserved.
       </p>
     </section>
   );

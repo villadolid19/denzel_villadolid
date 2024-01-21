@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <section
       id="About"
-      className="flex flex-col items-center p-2 h-[110%] lg:flex lg:justify-center lg:h-[100vh] lg:mb-36"
+      className="flex flex-col items-center p-2 h-[110%] lg:flex lg:justify-center lg:h-[110vh] lg:mb-36"
     >
       <p className="text-center text-lg text-slate-700">Get To Know More</p>
       <h1 className="text-center text-4xl">About Me</h1>
@@ -55,6 +55,34 @@ export const About = () => {
               my last year as a student. Now, I code as a hobby while waiting
               for an opportunity to be hired.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center lg:flex-row p-6 w-full">
+        <h2 className="text-xl text-slate-700 font-medium">Technical Skills:</h2>
+        <div className="flex flex-col lg:flex-row justify-center p-3 gap-4">
+          <div className="flex flex-row p-4 border border-slate-600 rounded-[20px]">
+            <div className="gap-2 list-disc">
+              <h3 className="text-lg font-semibold text-slate-500">Microsoft Office:</h3>
+              <ul className="list-disc ml-8">
+                <li>Word</li>
+                <li>PowerPoint</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-row p-4 border border-slate-600 rounded-[20px]">
+            <div className="gap-2 list-disc">
+              <h3 className="text-lg font-semibold text-slate-500">Basic Programming Languages:</h3>
+              <ul className="list-disc ml-8">
+                <li>Objective Oriented Programming (OOP)</li>
+                <li>Structured Query Language (SQL)</li>
+                <li>C Language</li>
+                <li>Hyper Text Mark-up Language (HTML)</li>
+                <li>Cascading Style Sheets (CSS)</li>
+                <li>Hypertext Preprocessor (PHP)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
