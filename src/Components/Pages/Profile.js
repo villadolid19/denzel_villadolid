@@ -32,7 +32,7 @@ export const Profile = ({ elementId }) => {
       <div className="items-center self-center text-center font-semibold gap-6 mt-12">
         <p className="text-center text-xl text-slate-500 m-4">Hello, I'm</p>
         <h1 className="text-center text-4xl">Denzel Dax Darryl Villadolid</h1>
-        <p className="text-2xl text-slate-600">A Developer</p>
+        <p className="text-2xl text-slate-600">A Web Developer</p>
 
         <div className="flex justify-center gap-3 mt-3">
           <button
