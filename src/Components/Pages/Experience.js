@@ -26,7 +26,7 @@ export const Experience = () => {
   return (
     <section
       id="Exp"
-      className="flex flex-col justify-center items-center mb-6 mt-12"
+      className="flex flex-col justify-center h-[100%] items-center mb-6 mt-96 lg:h-[100vh]"
     >
       <p className="text-center text-lg text-slate-700">Explore My</p>
       <h1 className="text-center text-4xl">Experience</h1>
