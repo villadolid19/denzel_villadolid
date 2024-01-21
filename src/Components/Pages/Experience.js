@@ -88,7 +88,7 @@ export const Experience = () => {
               </div>
               <div>
                 <h3 className="font-semibold mt-3">Chat GPT 3.5</h3>
-                <p>Intermediate</p>
+                <p>Experienced</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export const Experience = () => {
               </div>
               <div>
                 <h3 className="font-semibold mt-3">Chat GPT 3.5</h3>
-                <p>Intermediate</p>
+                <p>Experienced</p>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ export const Experience = () => {
               </div>
               <div>
                 <h3 className="font-semibold mt-3">Chat GPT 3.5</h3>
-                <p>Intermediate</p>
+                <p>Experienced</p>
               </div>
             </div>
           </div>
