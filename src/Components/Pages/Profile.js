@@ -19,7 +19,7 @@ export const Profile = ({ elementId }) => {
   return (
     <section
       id="Profile"
-      className="flex-row-reverse justify-center items-center gap-20 mb-24 lg:flex lg:justify-center lg:items-center lg:h-[100vh]"
+      className="flex-row-reverse z-[1000] justify-center items-center gap-20 mb-24 lg:flex lg:justify-center lg:items-center lg:h-[100vh]"
     >
       <div className="flex justify-center items-center">
         <img

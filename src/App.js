@@ -27,7 +27,7 @@ export default function App() {
     return (
       <motion.div
         style={y}
-        className="App flex-col justify-center items-center h-full w-full"
+        className="App"
         id="App"
       >
         <Navbar />

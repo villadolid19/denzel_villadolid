@@ -1,11 +1,12 @@
 import React from "react";
 import "../Navbar.css";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+// import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { EffectCoverflow } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -18,10 +19,11 @@ import Anal from "../Assets/Analytics.jpg";
 import Rept from "../Assets/Report.jpg";
 
 export const Projects = () => {
+
   return (
     <section
       id="Projects"
-      className="justify-center p-6 items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-auto lg:w-full mt-12"
+      className="justify-center p-6 items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-[100%] lg:w-full mt-40"
     >
       <p className="text-center text-lg text-slate-700">Explore My</p>
       <h1 className="text-center text-4xl mb-12">Projects</h1>
@@ -32,7 +34,7 @@ export const Projects = () => {
         BISU Alumni Tracer System
       </h3>
       <div className="flex flex-row gap-4 p-6 items-center justify-center ">
-        <FaAngleLeft className="w-12 h-12 text-slate-700" />
+      
         <Swiper
           effect={"coverflow"}
           loop={true}
@@ -46,12 +48,15 @@ export const Projects = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          pagination={true}
-          modules={[EffectCoverflow]}
-          className="rounded-[24px] bg-transparent m-0 w-[1500px]"
+          navigation={true}
+          pagination={{
+            type: 'progressbar',
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="rounded-[24px] bg-transparent p-6 m-0 w-[1500px]"
         >
           {data.map((grab, idx) => (
-            <SwiperSlide className="flex flex-col items-center h-auto text-black rounded-[24px]">
+            <SwiperSlide className="flex flex-col p-6 items-center h-auto text-black rounded-[24px]">
               <div
                 key={idx.name}
                 className="h-auto flex justify-center items-center rounded-[24px]"
@@ -69,7 +74,7 @@ export const Projects = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <FaAngleRight className="w-12 h-12 text-slate-700" />
+        
       </div>
       <div className="">
         <h2 className="text-xl font-semibold text-slate-700">Key Features:</h2>
@@ -122,7 +127,7 @@ const data = [
 
 
 
-
+ 
 
 
 

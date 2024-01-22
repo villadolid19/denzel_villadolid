@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <section
       id="About"
-      className="flex flex-col items-center p-2 h-[100%] lg:flex lg:justify-center lg:h-[110vh] lg:mb-36"
+      className="flex flex-col items-center z-[1000] mt-96 p-2 h-[100%] lg:flex lg:justify-center lg:h-[110vh]"
     >
       <p className="text-center text-lg text-slate-700">Get To Know More</p>
       <h1 className="text-center text-4xl">About Me</h1>
