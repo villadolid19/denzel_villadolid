@@ -14,7 +14,7 @@ export const Navbar = () => {
   
   return (
     <nav className="lg:fixed z-[1000] top-0 h-18 lg:overflow-hidden w-full lg:flex fixed justify-between items-center rounded-lg bg-slate-50 text-gray-600 shadow-lg">
-      <div className="text-3xl m-4 lg:ml-12 top-5 font-bold">3D Villadolid</div>
+      <div className="text-2xl m-4 lg:ml-12 top-5 font-bold">Denzel</div>
 
       <div
         className="menu lg:hidden flex absolute top-4 right-4 text-3xl"
