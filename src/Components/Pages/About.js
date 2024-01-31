@@ -48,23 +48,27 @@ export const About = () => {
           </div>
           <div className="mt-12 mb-6">
             <p className="font-md text-[20px] text-justify">
-              I am a Computer Science graduate from Bohol Island State
-              University (BISU). My experiences are based on what I studied
-              during the progress of my research about system development. I was
-              eager to study both frontend and backend to complete my system in
-              my last year as a student. Now, I code as a hobby while waiting
-              for an opportunity to be hired.
+              Seeking a challenging position where I can leverage my skills to
+              develop innovative software solutions and contribute to the growth
+              and success of the organization. I studied both frontend and
+              backend development during my last year as a student. Currently, I
+              code as a hobby while eagerly awaiting an opportunity for
+              employment.
             </p>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col justify-center lg:flex-row p-6 w-full">
-        <h2 className="text-xl text-slate-700 font-medium">Technical Skills:</h2>
+        <h2 className="text-xl text-slate-700 font-medium">
+          Technical Skills:
+        </h2>
         <div className="flex flex-col lg:flex-row justify-center p-3 gap-4">
           <div className="flex flex-row p-4 border border-slate-600 rounded-[20px]">
             <div className="gap-2 list-disc">
-              <h3 className="text-lg font-semibold text-slate-500">Microsoft Office:</h3>
+              <h3 className="text-lg font-semibold text-slate-500">
+                Microsoft Office:
+              </h3>
               <ul className="list-disc ml-8">
                 <li>Word</li>
                 <li>PowerPoint</li>
@@ -73,7 +77,9 @@ export const About = () => {
           </div>
           <div className="flex flex-row p-4 border border-slate-600 rounded-[20px]">
             <div className="gap-2 list-disc">
-              <h3 className="text-lg font-semibold text-slate-500">Basic Programming Languages:</h3>
+              <h3 className="text-lg font-semibold text-slate-500">
+                Basic Programming Languages:
+              </h3>
               <ul className="list-disc ml-8">
                 <li>Objective Oriented Programming (OOP)</li>
                 <li>Structured Query Language (SQL)</li>

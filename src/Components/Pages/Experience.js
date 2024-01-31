@@ -10,7 +10,7 @@ import { ImHtmlFive2 } from "react-icons/im";
 import { FaCss3 } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
-import { SiOpenai } from "react-icons/si";
+//import { SiOpenai } from "react-icons/si";
 
 //framework
 import { FaReact } from "react-icons/fa";
@@ -81,7 +81,8 @@ export const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-6">
+
+          {/* <div className="flex flex-wrap gap-6">
             <div className="flex flex-row items-center">
               <div>
                 <SiOpenai className="h-6 w-6 m-2 text-green-600" />
@@ -91,7 +92,7 @@ export const Experience = () => {
                 <p>Experienced</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col lg:w-1/2 border border-slate-500 rounded-3xl mb-4 p-4">
@@ -110,7 +111,7 @@ export const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-6">
+          {/* <div className="flex flex-wrap gap-6">
             <div className="flex flex-row items-center">
               <div>
                 <SiOpenai className="h-6 w-6 m-2 text-green-600" />
@@ -120,7 +121,7 @@ export const Experience = () => {
                 <p>Experienced</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col lg:w-1/2 border border-slate-500 rounded-3xl mb-4 p-4">
@@ -161,7 +162,7 @@ export const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-6">
+          {/* <div className="flex flex-wrap gap-6">
             <div className="flex flex-row items-center">
               <div>
                 <SiOpenai className="h-6 w-6 m-2 text-green-600" />
@@ -171,7 +172,7 @@ export const Experience = () => {
                 <p>Experienced</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Link to="Projects" spy={true} smooth={true} offset={-100} duration={600}>
@@ -181,10 +182,3 @@ export const Experience = () => {
   );
 };
 
-
-/*
-
-
-
-
-  */
