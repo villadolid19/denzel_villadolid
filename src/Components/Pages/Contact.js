@@ -17,7 +17,7 @@ export const Contact = () => {
           <img src={Mail} alt="Email icon" className="h-12 w-12" />
           <p>
             <a
-              href="mailto:villadolid@gmail.com"
+              href="mailto:denzelvilladolid1999@gmail.com"
               className="hover:underline hover:opacity-70"
             >
               MyMail@gmail.com
