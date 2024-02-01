@@ -14,7 +14,7 @@ import { Footer } from './Components/Pages/Footer.js';
 import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/400-italic.css"; 
-import "./App.css";
+
 
 export default function App() {
   let ref = useRef(null);

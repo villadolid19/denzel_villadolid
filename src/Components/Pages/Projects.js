@@ -6,7 +6,7 @@ import "../Navbar.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { EffectCoverflow } from "swiper/modules";
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -23,7 +23,7 @@ export const Projects = () => {
   return (
     <section
       id="Projects"
-      className="justify-center p-6 items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-[100%] lg:w-full mt-40"
+      className="justify-center p-4 items-center lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center h-[100%] lg:w-full mt-40"
     >
       <p className="text-center text-lg text-slate-700">Explore My</p>
       <h1 className="text-center text-4xl mb-12">Projects</h1>
@@ -33,8 +33,7 @@ export const Projects = () => {
       <h3 className="ml-6 lg:ml-36 md:ml-12 sm:ml-6 text-2xl text-black font-semibold mb-12">
         BISU Alumni Tracer System
       </h3>
-      <div className="flex flex-row gap-4 p-6 items-center justify-center ">
-      
+      <div className="flex flex-row gap-4 items-center justify-center ">
         <Swiper
           effect={"coverflow"}
           loop={true}
@@ -50,13 +49,17 @@ export const Projects = () => {
           }}
           navigation={true}
           pagination={{
-            type: 'progressbar',
+            type: "progressbar",
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
-          className="rounded-[24px] bg-transparent p-6 m-0 w-[1500px]"
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
+          className="rounded-[24px] bg-transparent m-0 w-[1500px]"
         >
           {data.map((grab, idx) => (
-            <SwiperSlide className="flex flex-col p-6 items-center h-auto text-black rounded-[24px]">
+            <SwiperSlide className="flex flex-col p-3 items-center h-auto text-black rounded-[15px]">
               <div
                 key={idx.name}
                 className="h-auto flex justify-center items-center rounded-[24px]"
@@ -64,7 +67,7 @@ export const Projects = () => {
                 <img
                   src={grab.img}
                   alt=""
-                  className="block w-[1100px] h-auto rounded-[24px]"
+                  className="block w-full h-auto rounded-[10px]"
                 />
               </div>
 
@@ -74,34 +77,47 @@ export const Projects = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        
       </div>
       <div className="">
-        <h2 className="text-xl font-semibold text-slate-700">Key Features:</h2>
+        <h2 className="text-xl font-semibold text-slate-700">
+          Project: <span className="font-bold">BISU Alumni tracer system</span>
+        </h2>
         <ul className="gap-2 text-justify list-disc ml-8">
           <li className="mt-2">
-            Imports a CSV file containing basic information about the particular
-            graduates.
+            The Alumni Tracer system links academia and the professional world,
+            tracking alumni careers for insights into program impact. It
+            evaluates relevance, updates data on alumni employment, roles, and
+            achievements, and adapts programs to industry trends, enhancing
+            institutional relevance.
           </li>
+        </ul>
+
+        <h2 className="text-xl font-semibold text-slate-700 mt-12">
+          Responsibilities
+        </h2>
+        <ul className="gap-2 text-justify list-disc ml-8">
           <li className="mt-2">
-            While importing, the system creates an account for each alumnus and
-            sends a notification to every graduate in the CSV file, providing
-            them with their username and the default password.
+            <span className="font-semibold">Platform Development: </span>
+            Designing, developing, and maintaining the overall platform,
+            ensuring a smooth and user-friendly experience for both desktop and
+            mobile users.
           </li>
+
           <li className="mt-2">
-            The alumni can log in and are redirected to a password change page
-            to personalize their accounts. After that, they can update their
-            work information and employment status. Additionally, we have a
-            history page that both admins and users can view to see if the
-            alumni have updated their information multiple times.
+            <span className="font-semibold">
+              User Interface (UI) and User Experience (UX) Design: </span>
+            Creating and improving the visual design, layout, and navigation to
+            enhance the user experience and engagement.
           </li>
+
           <li className="mt-2">
-            The admin also has the capability to edit alumni information, manage
-            events, and generate reports for each batch whether the alumni is
-            employed, unemployed, or inactive user.
+            <span className="font-semibold">Database Management: </span>
+            Designing and implementing a robust relational database system to
+            accurately retrieve comprehensive data about the alumni.
           </li>
         </ul>
       </div>
+      
     </section>
   );
 };

@@ -12,7 +12,7 @@ export const Contact = () => {
       <p className="text-center text-lg text-slate-700">Get in Touch</p>
       <h1 className="text-center text-4xl">Contact Me</h1>
 
-      <div className="flex flex-row justify-center lg:w-[600px] h-24 rounded-full border border-solid border-gray-500 bg-gray-250 m-8 p-2">
+      <div className="flex flex-row justify-center lg:w-[600px] h-24 rounded-full border border-solid border-gray-500 bg-gray-250 m-8 p-6">
         <div className="flex items-center justify-center gap-2 m-4">
           <img src={Mail} alt="Email icon" className="h-12 w-12" />
           <p>

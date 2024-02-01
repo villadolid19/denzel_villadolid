@@ -4,8 +4,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+nav{
   font-family: "Ubuntu", sans-serif;
-  height: auto;
 }
 
 .active {

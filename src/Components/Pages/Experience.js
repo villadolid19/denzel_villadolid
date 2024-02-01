@@ -175,6 +175,42 @@ export const Experience = () => {
           </div> */}
         </div>
       </div>
+
+      <div className="flex flex-col justify-center lg:flex-row p-6 w-full">
+        <h2 className="text-xl text-slate-700 font-medium">
+          Technical Skills:
+        </h2>
+        <div className="flex flex-col lg:flex-row justify-center p-3 gap-4">
+          <div className="flex flex-row p-4 lg:w-[400px] border border-slate-600 rounded-[15px] rounded-tr-[40px] rounded-bl-[40px]">
+            <div className="ml-12 lg:ml-0">
+              <h3 className="text-lg font-semibold text-slate-500">
+                Microsoft Office:
+              </h3>
+              <ul className="list-disc ml-8">
+                <li>Word</li>
+                <li>PowerPoint</li>
+                <li>Excel</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-row p-4 lg:w-[400px] border border-slate-600 rounded-[15px] rounded-tr-[40px] rounded-bl-[40px]">
+            <div className="ml-12 lg:ml-0">
+              <h3 className="text-lg font-semibold text-slate-500">
+                Basic Programming Languages:
+              </h3>
+              <ul className="list-disc ml-8">
+                <li>Objective Oriented Programming (OOP)</li>
+                <li>Structured Query Language (SQL)</li>
+                <li>C Language</li>
+                <li>Hyper Text Mark-up Language (HTML)</li>
+                <li>Cascading Style Sheets (CSS)</li>
+                <li>Hypertext Preprocessor (PHP)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Link to="Projects" spy={true} smooth={true} offset={-100} duration={600}>
         <img src={Arrow} alt="Arrow icon" className="h-12 w-12 mt-12 mb-6" />
       </Link>

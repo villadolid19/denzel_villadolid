@@ -5,7 +5,7 @@ import "../Navbar.css";
 export const Footer = () => {
 
   return (
-    <section id="About" className="flex flex-col gap-4 justify-center">
+    <section id="About" className="flex flex-col p-4 gap-4 justify-center">
       <dvi className="flex flex-row justify-center">
         <ul className="hidden sm:flex sm:flex-row sm:justify-center">
           <li className="w-full text-center text-xl">
