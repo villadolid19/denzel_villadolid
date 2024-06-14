@@ -6,10 +6,10 @@ import {About} from "./Components/Pages/About.js";
 import {Experience} from "./Components/Pages/Experience.js";
 import { Projects } from "./Components/Pages/Projects.js";
 import {Contact} from "./Components/Pages/Contact.js";
+import { Footer } from "./Components/Pages/Footer.js";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Footer } from './Components/Pages/Footer.js';
 
 import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
@@ -25,19 +25,14 @@ export default function App() {
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
     return (
-      <motion.div
-        style={y}
-        className="App"
-        id="App"
-      >
+      <motion.div style={y} className="App overflow-x-hidden" id="App">
         <Navbar />
-          <Profile />
-          <About />
-          <Experience />
-          <Projects />
-          <Contact />
+        <Profile />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
         <Footer />
-
       </motion.div>
     );
 }
