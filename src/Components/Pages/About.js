@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic1 from "../Assets/Don.jpg";
+import Pic1 from "../Assets/Formal wear.png";
 import Exper from "../Assets/experience.png";
 import Arrow from "../Assets/arrow.png";
 import { Link } from "react-scroll";
