@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "24.x"
+  },
+  
   "name": "denzel",
   "version": "0.1.0",
   "private": true,
