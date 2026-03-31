@@ -1,5 +1,5 @@
 import React from "react";
-import Pic1 from "../Assets/Don1.jpg";
+import Pic1 from "../Assets/Formal wear.png";
 import git from "../Assets/github.png";
 import Resume from "../Assets/Villadolid-Resume CV.pdf";
 import { Link } from "react-scroll";

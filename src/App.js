@@ -17,12 +17,12 @@ import "@fontsource/poppins/400-italic.css";
 
 
 export default function App() {
-  let ref = useRef(null);
-  let { scrollYProgress } = useScroll({
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
     return (
       <motion.div style={y} className="App overflow-x-hidden" id="App">
